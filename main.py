@@ -1,10 +1,12 @@
-def build_array_from(permutation):
-    array = [0] * len(permutation)
+from typing import List
 
-    for val, num in enumerate(permutation):
-        array[num] = permutation[val]
+class Solution:
+    def build_array_from(self, nums: List[int]) -> List[int]:
+        array = [0] * len(nums)
+        for val, i in enumerate(nums):
+            array[i] = nums[val]
 
-    return array
+        return array
 
 if __name__ == '__main__':
-    build_array_from('PyCharm')
+    pass
