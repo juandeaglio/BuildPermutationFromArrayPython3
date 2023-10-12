@@ -1,6 +1,6 @@
-def build_array(name):
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
+def build_array_from(permutation):
+    array = permutation
+    return array
 
 if __name__ == '__main__':
-    build_array('PyCharm')
+    build_array_from('PyCharm')
