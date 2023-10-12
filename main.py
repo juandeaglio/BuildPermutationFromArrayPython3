@@ -1,5 +1,9 @@
 def build_array_from(permutation):
-    array = permutation
+    array = [0] * len(permutation)
+
+    for val, num in enumerate(permutation):
+        array[num] = permutation[val]
+
     return array
 
 if __name__ == '__main__':
